@@ -1,6 +1,7 @@
 ### 使用maven进行整合
 1. 添加maven依赖
-`<plugins>
+(```)
+<plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -37,10 +38,12 @@
                     </dependency>
                 </dependencies>
             </plugin>
-        </plugins>`
+        </plugins>
+        (```)
 
 2. 添加generatorConfig.xml配置文件
-`<!DOCTYPE generatorConfiguration
+(```)
+<!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
@@ -92,7 +95,8 @@
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>
-</generatorConfiguration>`
+</generatorConfiguration>
+(```)
 
 3. 执行maven命令
 `mvn mybatis-generator:generate`
