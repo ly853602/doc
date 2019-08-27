@@ -1,5 +1,5 @@
 使用maven进行整合
-1.添加maven依赖
+1. 添加maven依赖
 `<plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -39,7 +39,7 @@
             </plugin>
         </plugins>`
 
-2.添加generatorConfig.xml配置文件
+2. 添加generatorConfig.xml配置文件
 `<!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
@@ -94,13 +94,13 @@
     </context>
 </generatorConfiguration>`
 
-3.执行maven命令
+3. 执行maven命令
 `mvn mybatis-generator:generate`
 
-4.添加MapperScan(mapper接口的目录)
+4. 添加MapperScan(mapper接口的目录)
 `@MapperScan(basePackages = "com.springboot.mybatis.mapper")`
 
-5.添加mapper依赖
+5. 添加mapper依赖
 `<dependency>
   <groupId>tk.mybatis</groupId>
   <artifactId>mapper-spring-boot-starter</artifactId>
